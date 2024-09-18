@@ -21,6 +21,27 @@ st.set_page_config(
     }
 )
 
+# Styling of metric container
+st.markdown("""
+  <style>
+  div[data-testid="metric-container"] {
+     background-color: #424b43;
+     border: 3px solid #111212;
+     padding: 5% 5% 5% 10%;
+     border-radius: 10px;
+     color: white;
+     overflow-wrap: break-word;
+  }
+
+  /* breakline for metric text         */
+  div[data-testid="metric-container"] > label[data-testid="stMetricLabel"] > div {
+     overflow-wrap: break-word;
+     white-space: break-spaces;
+     color: #B7e493;
+  }
+  </style>
+  """, unsafe_allow_html=True)
+
 
 ###################################
 ############ CACHE DATA ###########
