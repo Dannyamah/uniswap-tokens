@@ -10,7 +10,7 @@ from streamlit_extras.colored_header import colored_header
 st.cache_data.clear()
 
 st.set_page_config(
-    page_title="Uniswap Gas Subsidy On L2s",
+    page_title="Uniswap Tokens",
     page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded",
