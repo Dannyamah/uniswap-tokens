@@ -494,12 +494,6 @@ with col_1c:
     st.metric("Avg Token Lifespan (Days)", df27['AVG_LIFESPAN_DAYS'][0])
     st.link_button("View SQL", f"{url27}")
 
-colored_header(
-    label="",
-    description="",
-    color_name="gray-70",
-)
-
 col_2a, col_2b = st.columns(2)
 with col_2a:
     st.plotly_chart(df1_fig1, theme="streamlit", use_container_width=True)
