@@ -649,7 +649,7 @@ st.link_button("View SQL", f"{url24}")
 insight_8 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px;\">\nExamining token expansions from their original chain to a secondary chain reveals that the \"Ethereum → Base\" path is by far the most prevalent, with around 16,000 tokens taking this route—more than all other expansion paths combined. The next most popular paths are \"Ethereum → Polygon\" and \"Ethereum → Arbitrum,\" with 2,800 and 1,800 tokens, respectively.</p>'
 st.markdown(insight_8, unsafe_allow_html=True)
 
-insight_8_1 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px;\">Token expansions that don’t involve Ethereum are relatively rare, indicating that direct migrations between non-Ethereum chains are uncommon. This underscores Ethereum’s central role in cross-chain activity, acting as the main hub for token movement across the blockchain ecosystem.</p>'
+insight_8_1 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px;\">There are relatively low token counts for expansions between chains that don't involve Ethereum. This suggests that direct token migrations between alternative chains are less common, with most cross-chain activity centering around Ethereum.</p>'
 st.markdown(insight_8_1, unsafe_allow_html=True)
 
 colored_header(
