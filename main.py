@@ -572,18 +572,30 @@ with col_7b:
     st.plotly_chart(df8_fig1, theme="streamlit", use_container_width=True)
     st.link_button("View SQL", f"{url8}")
 
-insight_5 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
+insight_5_1 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
 Long-lived tokens (more than 30 days) make up the largest segment at 47.3%, closely followed by short-lived tokens (less than 7 days) at 44.8%. Medium-lived tokens (7 to 30 days) represent a much smaller portion at 7.85%. This distribution suggests a polarized token ecosystem on Uniswap where most tokens either establish themselves for the long term or fail quickly, with relatively few occupying the middle ground.
+</p>'''
 
+insight_5_2 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
 Observing the percentage of active and inactive tokens across blockchains, notably, all blockchains show a significantly higher percentage of inactive tokens compared to active ones. BSC (Binance Smart Chain), Optimism and Avalanche have the highest proportion of active tokens - 35% each. Ethereum, despite being the most established blockchain, has the lowest percentages of active tokens, with less than 14% active tokens. Base has the second lowest active token percentage, at about 16%.
+</p>'''
 
+insight_5_3 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
 The Uniswap token ecosystem is characterized by extremes, with most tokens either surviving past the 30-day mark or failing within a week. This indicates a challenging environment where tokens must quickly prove their value or face obsolescence.
+</p>'''
 
+insight_5_4 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
 Across all blockchains, inactive tokens far outnumber active ones. This suggests a high rate of token abandonment or failure, which is consistent with the high percentage of short-lived tokens shown in the token lifespan pie chart.
+</p>'''
 
+insight_5_5 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
 Ethereum's low percentage of active tokens, despite its prominence, might reflect its maturity as a platform. It could have accumulated a large number of inactive tokens over time, while still maintaining a significant number of active tokens in absolute terms.
 </p>'''
-st.markdown(insight_5, unsafe_allow_html=True)
+st.markdown(insight_5_1, unsafe_allow_html=True)
+st.markdown(insight_5_2, unsafe_allow_html=True)
+st.markdown(insight_5_3, unsafe_allow_html=True)
+st.markdown(insight_5_4, unsafe_allow_html=True)
+st.markdown(insight_5_5, unsafe_allow_html=True)
 
 col_8a, col_8b = st.columns(2)
 with col_8a:
