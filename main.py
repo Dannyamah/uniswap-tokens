@@ -570,6 +570,7 @@ with col_7a:
     st.link_button("View SQL", f"{url11}")
 with col_7b:
     st.plotly_chart(df8_fig1, theme="streamlit", use_container_width=True)
+    st.info('A token is considered "Active" if it has seen a swap within the last 30 days.', icon="ℹ️")
     st.link_button("View SQL", f"{url8}")
 
 insight_5_1 = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
