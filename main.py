@@ -642,7 +642,11 @@ insight_8_1 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px
 st.markdown(insight_8, unsafe_allow_html=True)
 
 st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">Final Thoughts</h1>', unsafe_allow_html=True)
-
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
 conclusion = '''<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">
 Uniswap’s token ecosystem is evolving fast, marked by big shifts and surprises. The rise of unique tokens and pairs has been nothing short of remarkable, with Ethereum leading the charge, as expected, but the recent explosion on Base turned heads. Late July 2024 was a game-changer—Base accounted for a staggering 86% of unique tokens and 79% of pairs traded, driven by low fees and a memecoin frenzy that briefly saw Base outpace Ethereum itself.</p>
 
