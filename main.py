@@ -502,9 +502,6 @@ with col_2b:
     st.plotly_chart(df2_fig1, theme="streamlit", use_container_width=True)
     st.link_button("View SQL", f"{url2}")
 
-st.plotly_chart(df12_fig1, theme="streamlit", use_container_width=True)
-st.link_button("View SQL", f"{url12}")
-
 col_3a, col_3b = st.columns(2)
 with col_3a:
     st.plotly_chart(df4_fig1, theme="streamlit", use_container_width=True)
@@ -512,6 +509,10 @@ with col_3a:
 with col_3b:
     st.plotly_chart(df5_fig1, theme="streamlit", use_container_width=True)
     st.link_button("View SQL", f"{url5}")
+
+st.plotly_chart(df12_fig1, theme="streamlit", use_container_width=True)
+st.link_button("View SQL", f"{url12}")
+
 
 col_4a, col_4b = st.columns(2)
 with col_4a:
