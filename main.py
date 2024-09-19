@@ -317,7 +317,7 @@ df11_fig1 = px.pie(df11, names='CATEGORY', values='PERCENTAGE', title='Percentag
 
 ##################### DF12 #####################
 ################ FIG1 START ###################
-df12_fig1 = px.line(df12, x='DATE', y='UNIQUE_TOKEN_COUNT', title='Daily Unique Tokens vs Avg Txn Fee USD')
+df12_fig1 = px.line(df12, x='DATE', y='UNIQUE_TOKEN_COUNT', title='Daily Unique Tokens vs Average Transaction Fee USD')
 df12_fig1.update_layout(hovermode="x unified", yaxis2=dict(title='Avg Txn Fee USD', overlaying='y', side='right'))
 df12_fig1.add_trace(go.Scatter(x=df12['DATE'], y=df12['AVG_TX_FEE_USD'], mode='lines', name='Avg Txn Fee USD', yaxis='y2'))
 ################# FIG1 END ####################
@@ -513,7 +513,7 @@ with col_3b:
 st.plotly_chart(df12_fig1, theme="streamlit", use_container_width=True)
 st.link_button("View SQL", f"{url12}")
 
-insight_1 = '''<p style='font-family:sans-serif; color:#4d372c; font-size: 18px;'>There has been a consistent rise in unique tokens and token pairs traded on Uniswap, with Ethereum maintaining its dominant position. This growth surged notably in 2023, culminating in a dramatic peak in late July 2024. During this period, the Base blockchain led with a significant contribution, accounting for 86% of unique tokens and 79% of token pairs, with totals reaching 43,000 and 48,000 respectively.</p>
+insight_1 = '''<p style='font-family:sans-serif; color:#4d372c; font-size: 18px;'>There has been a consistent rise in unique tokens and token pairs traded on Uniswap, with Ethereum maintaining its dominant position. This growth surged notably in 2023, culminating in a dramatic peak in late July 2024. During this period, the Base blockchain led with a significant contribution, accounting for 86% of the unique tokens and 79% of the token pairs traded, with overall totals across all blockchains reaching 43,000 and 48,000, respectively.</p>
 
 <p style='font-family:sans-serif; color:#4d372c; font-size: 18px;'>The recent activity surge on Base can be attributed to several factors. The Dencun upgrade made L2s like Base much cheaper to transact on, which is evident from the inverse relationship between transaction fees and unique token counts. Higher fees often correlate with temporary dips in token activity. Additionally, the memecoin craze further spurred Base's activity, even surpassing Ethereum at its peak.</p><p style='font-family:sans-serif; color:#4d372c; font-size: 18px;'>While chains like Arbitrum, Optimism, Polygon, BSC, and Avalanche exhibit lower activity, the overall trend reflects a significant market-wide increase in Uniswap tokens trading activity.</p>'''
 st.markdown(insight_1, unsafe_allow_html=True)
@@ -537,7 +537,7 @@ with col_5b:
     st.plotly_chart(df7_fig1, theme="streamlit", use_container_width=True)
     st.link_button("View SQL", f"{url7}")
 
-insight_3 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">Token creation has been in a steady upward trajectory over time, punctuated by occasional spikes in activity. By 2024, the cumulative count of new tokens has surpassed 150,000, with a particularly notable surge in early 2024 where weekly new token counts exceed 3,000.</p><p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">By blockchain, Ethereum consistently leads in new token launches, underscoring its role as the primary platform for token launches. However, the most striking observation is the dramatic surge on the Base blockchain, in early 2024. This spike, which saw nearly 5,000 new tokens in a single week, dwarfs activity on other chains.</p><p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">Other blockchains like Arbitrum, Optimism, Polygon, BSC, and Avalanche display lower but steady levels of new token creation.</p>'
+insight_3 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">New tokens have been in a steady upward trajectory over time, punctuated by occasional spikes in activity. By 2024, the cumulative count of new tokens has surpassed 150,000, with a particularly notable surge in early 2024 where weekly new token counts exceed 3,000.</p><p style="font-family:sans-serif; color:#4d372c; font-size: 18px;">By blockchain, Ethereum consistently leads in new token launches, underscoring its role as the primary platform for token launches. However, the most striking observation is the dramatic surge on Base in April 2024. Other blockchains like Arbitrum, Optimism, Polygon, BSC, and Avalanche display lower but steady levels of new token creation.</p>'
 st.markdown(insight_3, unsafe_allow_html=True) 
 
 col_6a, col_6b = st.columns(2)
@@ -557,10 +557,9 @@ st.markdown(insight_4, unsafe_allow_html=True)
 insight_4_1 = '''<p style="font-family:sans-serif;color:#4d372c;font-size:18px;">
 When we break down the token lifespan distribution into three categories: long-lived (more than 30 days), medium-lived (7 to 30 days), and short-lived (less than 7 days), we observe the following
 
-1. Arbitrum and Avalanche have the highest proportion of long-lived tokens, suggesting more established or sustainable projects on these platforms.
-2. Base and BSC show a more balanced distribution across all three categories, indicating a diverse ecosystem with both new and established tokens.
+1. Base and BSC have the highest proportion of long-lived tokens, suggesting more established or sustainable projects on these platforms.
+2. Arbitrum shows a more balanced distribution across all three categories, indicating a diverse ecosystem with both new and established tokens.
 3. Ethereum, despite its prominence, has a surprisingly high percentage of short-lived tokens. This could reflect its role as an incubator for new projects, many of which may not survive long-term.
-4. Optimism and Polygon have the highest proportion of short-lived tokens, which seems to contradict their high average token lifespans. This suggests they are polarized chains with many short-lived tokens balanced by a smaller number of very long-lived ones.
 </p>
 '''
 st.markdown(insight_4_1, unsafe_allow_html=True)
