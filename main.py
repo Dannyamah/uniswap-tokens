@@ -550,7 +550,11 @@ with col_6b:
 
 insight_4 = '''<p style="font-family:sans-serif;color:#4d372c;font-size:18px;">
 Optimism leads with the longest average token lifespan of over 236 days, followed by Polygon and Ethereum. This suggests that tokens on these chains tend to have more longevity and potentially more stability. In contrast, Base has the shortest average lifespan at around 50 days.
+</p>
+'''
+st.markdown(insight_4, unsafe_allow_html=True)
 
+insight_4_1 = '''<p style="font-family:sans-serif;color:#4d372c;font-size:18px;">
 When we break down the token lifespan distribution into three categories: long-lived (more than 30 days), medium-lived (7 to 30 days), and short-lived (less than 7 days), we observe the following
 
 1. Arbitrum and Avalanche have the highest proportion of long-lived tokens, suggesting more established or sustainable projects on these platforms.
@@ -559,7 +563,7 @@ When we break down the token lifespan distribution into three categories: long-l
 4. Optimism and Polygon have the highest proportion of short-lived tokens, which seems to contradict their high average token lifespans. This suggests they are polarized chains with many short-lived tokens balanced by a smaller number of very long-lived ones.
 </p>
 '''
-st.markdown(insight_4, unsafe_allow_html=True)
+st.markdown(insight_4_1, unsafe_allow_html=True)
 
 col_7a, col_7b = st.columns(2)
 with col_7a:
