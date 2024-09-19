@@ -641,6 +641,11 @@ st.markdown(insight_8, unsafe_allow_html=True)
 insight_8_1 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px;\">Token expansions that don’t involve Ethereum are relatively rare, indicating that direct migrations between non-Ethereum chains are uncommon. This underscores Ethereum’s central role in cross-chain activity, acting as the main hub for token movement across the blockchain ecosystem.</p>'
 st.markdown(insight_8, unsafe_allow_html=True)
 
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
 st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">Final Thoughts</h1>', unsafe_allow_html=True)
 colored_header(
     label="",
