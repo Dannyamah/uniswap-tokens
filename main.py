@@ -312,7 +312,7 @@ df10_fig1.update_layout(barmode='stack', hovermode='x unified')
 
 ##################### DF11 #####################
 ################ FIG1 START ###################
-df11_fig1 = px.pie(df11, names='CATEGORY', values='PERCENTAGE', title='Percentage of Tokens by Lifespan Category')
+df11_fig1 = px.pie(df11, names='CATEGORY', values='PERCENTAGE', title='Distribution of Tokens by Lifespan Category')
 ################# FIG1 END ####################
 
 ##################### DF12 #####################
