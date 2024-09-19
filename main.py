@@ -7,7 +7,7 @@ from millify import millify
 from plotly.subplots import make_subplots
 from streamlit_extras.colored_header import colored_header
 
-st.cache_data.clear()
+# st.cache_data.clear()
 
 st.set_page_config(
     page_title="Uniswap Tokens",
@@ -650,7 +650,7 @@ insight_8 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px;\
 st.markdown(insight_8, unsafe_allow_html=True)
 
 insight_8_1 = '<p style=\"font-family:sans-serif; color:#4d372c; font-size: 18px;\">Token expansions that don’t involve Ethereum are relatively rare, indicating that direct migrations between non-Ethereum chains are uncommon. This underscores Ethereum’s central role in cross-chain activity, acting as the main hub for token movement across the blockchain ecosystem.</p>'
-st.markdown(insight_8, unsafe_allow_html=True)
+st.markdown(insight_8_1, unsafe_allow_html=True)
 
 colored_header(
     label="",
