@@ -33,6 +33,12 @@ FlipsideCrypto's <code>crosschain.defi.ez_dex_swaps</code> table.
 """
 st.markdown(text_1, unsafe_allow_html=True)
 
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
+
 ###################################
 ############ CACHE DATA ###########
 ###################################
