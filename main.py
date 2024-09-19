@@ -28,7 +28,7 @@ text_1 = """
 This dashboard offers an in-depth analysis of token activity on Uniswap, focusing on trends across multiple chains and Uniswap versions. 
 It addresses key questions such as the growth of unique tokens over time, shifts in popular token pairs, and differences in token activity across chains. 
 The analysis covers the following blockchains: Arbitrum, Avalanche, Base, Binance Smart Chain (BSC), Ethereum, Optimism, and Polygon, with data sourced for Uniswap V2 and V3 via 
-FlipsideCrypto's <code>crosschain.defi.ez_dex_swaps</code> table.
+FlipsideCrypto's <a href="https://flipsidecrypto.github.io/crosschain-models/#!/model/model.crosschain_models.defi__ez_dex_swaps"><code>crosschain.defi.ez_dex_swaps</code></a> table.
 </p>
 """
 st.markdown(text_1, unsafe_allow_html=True)
