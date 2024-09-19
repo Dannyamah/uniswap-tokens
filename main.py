@@ -21,12 +21,17 @@ st.set_page_config(
     }
 )
 
-st.markdown(f'<h1 style="color:#434346;font-size:60px;text-align:center;">{"Uniswap On L2s"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#434346;font-size:60px;text-align:center;">Uniswap Tokens</h1>', unsafe_allow_html=True)
 
-text_1 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">This dashboard offers an in-depth analysis of token activity on Uniswap, focusing on trends across multiple chains and Uniswap versions. It addresses key questions such as the growth of unique tokens over time, shifts in popular token pairs, and differences in token activity across chains. The analysis covers the following blockchains: Arbitrum, Avalanche, Base, Binance Smart Chain (BSC), Ethereum, Optimism, and Polygon, with data sourced for Uniswap V2 and V3 via FlipsideCrypto\'s <code>crosschain.defi.ez_dex_swaps</code> table.</p>'
-
+text_1 = """
+<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">
+This dashboard offers an in-depth analysis of token activity on Uniswap, focusing on trends across multiple chains and Uniswap versions. 
+It addresses key questions such as the growth of unique tokens over time, shifts in popular token pairs, and differences in token activity across chains. 
+The analysis covers the following blockchains: Arbitrum, Avalanche, Base, Binance Smart Chain (BSC), Ethereum, Optimism, and Polygon, with data sourced for Uniswap V2 and V3 via 
+FlipsideCrypto's <code>crosschain.defi.ez_dex_swaps</code> table.
+</p>
+"""
 st.markdown(text_1, unsafe_allow_html=True)
-st.info('Click on "View SQL", to check out the underlying FlipsideCrypto SQL query.', icon="ℹ️")
 
 ###################################
 ############ CACHE DATA ###########
