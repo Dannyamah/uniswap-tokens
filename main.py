@@ -33,12 +33,6 @@ FlipsideCrypto's <code>crosschain.defi.ez_dex_swaps</code> table.
 """
 st.markdown(text_1, unsafe_allow_html=True)
 
-colored_header(
-    label="",
-    description="",
-    color_name="gray-70",
-)
-
 ###################################
 ############ CACHE DATA ###########
 ###################################
@@ -483,7 +477,11 @@ df24_fig1.update_layout(hovermode="x unified")
 df25_fig1 = px.pie(df25, names='NUMBER_OF_CHAINS', values='TOKEN_COUNT', title='Distribution of Tokens by Number of Active Chains')
 ################# FIG1 END ####################
 
-
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
 
 col_1a, col_1b, col_1c = st.columns(3)
 with col_1a:
@@ -496,7 +494,11 @@ with col_1c:
     st.metric("Avg Token Lifespan (Days)", df27['AVG_LIFESPAN_DAYS'][0])
     st.link_button("View SQL", f"{url27}")
 
-
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
 
 col_2a, col_2b = st.columns(2)
 with col_2a:
